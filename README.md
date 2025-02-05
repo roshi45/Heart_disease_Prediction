@@ -26,7 +26,7 @@ To set up the project, follow these steps:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/heart-disease-prediction.git
+git clone https://github.com/roshi45/Heart_disease_Prediction.git
 
 # Navigate to the project directory
 cd heart-disease-prediction
