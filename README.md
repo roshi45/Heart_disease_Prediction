@@ -47,8 +47,6 @@ cd heart-disease-prediction
 - Accuracy Score
 - Feature Importance Analysis
 
-## 📜 License
-This project is licensed under the MIT License.
 
 ---
 
