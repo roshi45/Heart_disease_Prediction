@@ -37,7 +37,7 @@ cd heart-disease-prediction
 1. Load and preprocess the dataset.
 2. Convert categorical features into numerical format.
 3. Normalize the data using MinMaxScaler.
-4. Train models such as Logistic Regression, Random Forest, and XGBoost.
+4. Train models such as Logistic Regression, Random Forest,K-Nearest Neighbors,Support Vector Machine,Naive Bayes,Decision Tree and Gradient Boosting.
 5. Evaluate performance using accuracy, precision, recall, and F1-score.
 
 
@@ -51,5 +51,5 @@ cd heart-disease-prediction
 This project is licensed under the MIT License.
 
 ---
-🚀 **Let's make healthcare smarter with AI!**
+
 
