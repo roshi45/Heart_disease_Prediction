@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart Disease Prediction</title>
+    <script>
+        document.getElementById("predict-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Get the values from the form
+            const age = document.getElementById("age").value;
+            const sex = document.getElementById("sex").value;
+            const cholesterol = document.getElementById("cholesterol").value;
+            const bloodPressure = document.getElementById("blood-pressure").value;
+            const maxHeartRate = document.getElementById("max-heart-rate").value;
+
+            // Example prediction logic (replace with actual model prediction)
+            const prediction = (age > 50 && cholesterol > 200 && maxHeartRate < 120) ? "Has Heart Disease" : "No Heart Disease";
+
+            // Display the result
+            document.getElementById("result").innerText = `Prediction: ${prediction}`;
+        });
+    </script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .container { max-width: 400px; margin: auto; padding: 20px; }
+        input { display: block; width: 100%; margin: 10px 0; padding: 8px; }
+        button { padding: 10px 15px; cursor: pointer; }
+        #result { margin-top: 20px; font-size: 18px; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Heart Disease Prediction</h2>
+        <form id="predict-form">
+            <input type="number" id="age" placeholder="Enter Age" required>
+            <select id="sex" required>
+                <option value="">Select Sex</option>
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+            <input type="number" id="cholesterol" placeholder="Enter Cholesterol Level" required>
+            <input type="number" id="blood-pressure" placeholder="Enter Resting Blood Pressure" required>
+            <input type="number" id="max-heart-rate" placeholder="Enter Max Heart Rate" required>
+            <button type="submit">Predict</button>
+        </form>
+        
+        <div id="result"></div>
+    </div>
+</body>
+</html>
